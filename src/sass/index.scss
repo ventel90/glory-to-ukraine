@@ -1,11 +1,2 @@
-/*UTILS*/
-@import './utils/normalize';
-@import './utils/vars';
-@import './utils/breakpoints';
-@import './utils/hidden';
-
-/*BASE*/
-@import './base/common';
-@import './base/global';
-@import './base/card-set';
-@import './base/container';
+@import './common';
+@import './example';
