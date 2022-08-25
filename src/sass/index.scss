@@ -9,3 +9,12 @@
 @import './base/global';
 @import './base/card-set';
 @import './base/container';
+
+/*COMPONENTS*/
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/favorites';
+@import './layouts/offerings';
+@import './layouts/costumers';
+@import './layouts/subscribe';
+@import './layouts/footer';
