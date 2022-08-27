@@ -1,0 +1,81 @@
+.offerings {
+  background-image: url('../images/offerings/offerings_bg_mob.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__imageWrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__circle {
+    position: relative;
+    width: 255px;
+    height: 255px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ffe550, 0 0 0 13px rgba(255, 255, 255, 0.5);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/offerings/offerings_bg_mob_lg.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/offerings/offerings_bg_tab.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/offerings/offerings_bg_desk.png');
+  }
+}
+
+.description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  width: 272px;
+  height: 80px;
+}
+
+.offer {
+  padding-top: 100px;
+}
+
+.offer__list {
+  list-style-type: none;
+}
+
+.boo {
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 28px;
+}
+
+.button {
+  background: #ffffff;
+  max-width: 130px;
+  max-height: 40px;
+  border: 1px solid $green;
+  cursor: pointer;
+
+  &:hover {
+    border: $dark-green;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 106px;
+    max-height: 40px;
+  }
+}
