@@ -1,0 +1,41 @@
+.subscribe {
+  position: relative;
+  padding-top: 0;
+}
+.subscribe__container {
+  width: 656px;
+  margin-right: auto;
+  margin-left: 0;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.subscribe__paragraph {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+.subscribe__input {
+  width: 395px;
+  @extend %subscribe__common-input;
+  margin-right: 32px;
+}
+.subscribe__button {
+  @extend %subscribe__common-button;
+  background-color: $green;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+}
+.subscribe__photo {
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
