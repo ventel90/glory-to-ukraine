@@ -1,0 +1,71 @@
+.offerings {
+  background-image: url('../images/img_offerings/background_offering.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100%;
+  width: 100%;
+//   padding-left: 20px;
+
+  @media screen and (min-width:479px){
+          background-image: url('../images/img_offerings/background_480.png') ;   
+  }
+  @media screen and (min-width:767px) {
+      background-image: url('../images/img_offerings/background_tab.png');
+  }
+  @media screen and (min-width:1280px) {
+      background-image: url('../images/img_offerings/background_desk.png');
+  }
+}
+
+.description {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+  width: 272px;
+  height: 80px;
+}
+
+.offer {    
+//   margin-left: 20px;
+//   margin-right: 25px;
+  padding-top: 100px;
+}
+.offer__list {
+    list-style-type: none;
+}
+.boo {
+  
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 28px;
+    
+
+}
+.offer__logo {
+  
+        background-image: url('../images/img_offerings/aple.jpg');
+        background-size: 100% 100%;
+    
+border: #ffffff;    }
+  
+
+
+.button {
+  background: #ffffff;
+  max-width: 130px;
+  max-height: 40px;
+  border: 1px solid $green;
+  cursor: pointer;
+
+  &:hover {
+    border: $dark-green;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 106px;
+    max-height: 40px;
+  }
+}
