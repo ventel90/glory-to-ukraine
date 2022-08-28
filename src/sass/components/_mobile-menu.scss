@@ -1,0 +1,63 @@
+//Mobile menu styles
+.mob-menu__btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
+  @media screen and(min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mob-menu__icon {
+  fill: $dark-green;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $yellow;
+  }
+}
+
+.menu-overlay {
+  display: none;
+  &.is-open {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+}
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: $colowhite;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+}
+.menu__list {
+  display: block;
+}
+.menu__item {
+  padding: 16px 41px 16px 16px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    text-decoration: none;
+    color: inherit;
+    &:first-child {
+      border-radius: 30px 0px 0px 0px;
+    }
+    &:last-child {
+      border-radius: 0px 0px 30px 30px;
+    }
+  }
+}
