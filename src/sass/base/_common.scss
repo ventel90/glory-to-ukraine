@@ -8,6 +8,11 @@
   color: $primary-color;
   border-radius: 30px;
   padding: 11px 22px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    display: block;
+  }
 }
 %subscribe__common-input {
   &::placeholder {
