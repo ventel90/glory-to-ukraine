@@ -1,7 +1,6 @@
-<section class="hero container">
+<section class="hero">
   <div class="hero__block">
     <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-
     <p class="hero__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
@@ -9,11 +8,43 @@
     </p>
     <button class="hero__btn" type="button">Order Now</button>
   </div>
-  <img
-    class="hero__img"
-    src="./images/hero/img-1@1x_lg.png"
-    alt=""
-    width="528"
-    height="528"
-  />
+  <picture class="hero__picture">
+    <!-- Desktop screen -->
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./images/hero/img-1@1x_lg.png 1x,
+        ./images/hero/img-1@2x_lg.png 2x
+      "
+      type="image/png"
+    />
+    <!-- Tablet screen -->
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./images/hero/img-1@1x_md.png 1x,
+        ./images/hero/img-1@2x_md.png 2x
+      "
+      type="image/png"
+    />
+    <img
+      class="hero__img"
+      src="./images/hero/img-1@1x_lg.png"
+      alt="Dish"
+      width="528"
+      height="528"
+    />
+    <div class="switch">
+      <button type="button" class="arrows">
+        <svg class="arrow" width="29" height="16">
+          <use href="./images/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+      <button type="button" class="arrows">
+        <svg class="arrow" width="29" height="16">
+          <use href="./images/sprite.svg#arrow-left"></use>
+        </svg>
+      </button>
+    </div>
+  </picture>
 </section>
