@@ -1,0 +1,180 @@
+.footer {
+  background-color: $bgc-white;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    background-position: center bottom, top right, top 132px left;
+
+    background-size: 250px, 104px, 110px;
+    background-image: url(../images/images-kutsyi_vasyl/mobile-footer-fruits.png),
+      url(../images/images-kutsyi_vasyl/mobile-footer-orange.png),
+      url(../images/images-kutsyi_vasyl/mobile-footer-apple.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/images-kutsyi_vasyl/mobile-footer-fruits@2x.png),
+          url(../images/images-kutsyi_vasyl/mobile-footer-orange@2x.png),
+          url(../images/images-kutsyi_vasyl/mobile-footer-apple@2x.png);
+      }
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    background-position: center bottom, top right;
+    background-size: 768px, 203px;
+    background-image: url(../images/images-kutsyi_vasyl/tablet-footer-fruits.png),
+      url(../images/images-kutsyi_vasyl/tablet-footer-orange.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/images-kutsyi_vasyl/tablet-footer-fruits@2x.png),
+          url(../images/images-kutsyi_vasyl/tablet-footer-orange@2x.png);
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-position: center bottom;
+    background-size: 1210px;
+    background-image: url(../images/images-kutsyi_vasyl/desktop-footer-fruits.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/images-kutsyi_vasyl/desktop-footer-fruits@2x.png);
+      }
+    }
+  }
+}
+.footer__logo-photo {
+  max-width: 69px;
+}
+.footer__container {
+  margin-bottom: 80px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.footer__navigation {
+  margin-top: 4px;
+}
+.footer__link-logo {
+  margin-right: 145px;
+  @media screen and (max-width: 767px) {
+    margin-right: 81px;
+  }
+}
+.footer__navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.footer__form {
+  margin-left: auto;
+  display: flex;
+
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    gap: 12px;
+  }
+}
+
+.footer__form-title {
+  font-weight: 500;
+
+  line-height: 150%;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+.footer__form-input {
+  @extend %subscribe__common-input;
+  margin-right: 13px;
+  margin-left: auto;
+}
+.footer__form-button {
+  @extend %subscribe__common-button;
+  background: #ffffff;
+  border: 2px solid $dark-green;
+  &:hover,
+  &:focus {
+    background-color: $yellow;
+  }
+}
+.footer__info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media screen and (max-width: 767px) {
+    gap: 32px;
+  }
+}
+.footer__info-link {
+  font-size: 12px;
+  line-height: 1.16px;
+  color: $dark-green;
+  text-decoration-line: underline;
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+    line-height: 0.83;
+  }
+}
+.footer__text {
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+  font-size: 12px;
+  line-height: 1.16;
+  height: 14px;
+}
+
+.footer__container--equal {
+  display: flex;
+
+  @media screen and (min-width: $tablet) {
+    height: 51px;
+    align-items: center;
+  }
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 40px;
+  }
+}
+.footer__container-links {
+  display: flex;
+  align-items: baseline;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.footer__link--green {
+  color: $dark-green;
+}
+.footer__link-navigation {
+  @media screen and (max-width: 1279px) {
+    color: #000;
+  }
+  &:hover,
+  &:focus {
+    text-decoration-line: underline;
+
+    color: $green;
+  }
+}
+.footer__box-subscribe {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,1 +1,32 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+// common form (for subscribe and footer) Kutsyi Vasyl
+%subscribe__common-button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: $primary-color;
+  border-radius: 30px;
+  padding: 11px 22px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    display: block;
+  }
+}
+%subscribe__common-input {
+  &::placeholder {
+    font-size: 12px;
+    line-height: 150%;
+    color: #505050;
+  }
+  padding: 12px;
+  border-radius: 30px;
+  background: $bgc-white;
+
+  border: 1px solid $yellow;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
