@@ -1,29 +1,48 @@
 .subscribe {
   position: relative;
   padding-top: 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 52px;
+  }
+  @media screen and (max-width: 1279px) {
+    padding-top: 82px;
+  }
 }
-.subscribe__container {
-  width: 656px;
-  margin-right: auto;
-  margin-left: 0;
-}
+
 .subscribe__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 120%;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+  }
 }
 
 .subscribe__paragraph {
-  font-size: 16px;
-  line-height: 150%;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
   margin-bottom: 24px;
+  @media screen and (min-width: $desktop) {
+    width: 656px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
 
 .subscribe__input {
-  width: 395px;
   @extend %subscribe__common-input;
-  margin-right: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+    width: 395px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+  }
 }
 .subscribe__button {
   @extend %subscribe__common-button;
@@ -36,6 +55,15 @@
 }
 .subscribe__photo {
   position: absolute;
-  top: -50px;
+  top: -55px;
   right: 0;
+
+  @media screen and (max-width: 767px) {
+    transform: translate(-50%, -50%);
+    top: -10px;
+    left: 50%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    top: -75px;
+  }
 }

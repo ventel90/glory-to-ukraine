@@ -1,4 +1,4 @@
-.hidden {
+%visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -9,4 +9,15 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+%link {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
