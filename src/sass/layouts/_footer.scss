@@ -73,8 +73,6 @@
   }
 }
 .footer__navigation-list {
-  font-size: 14px;
-  line-height: 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
@@ -94,7 +92,7 @@
 
 .footer__form-title {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 150%;
   @media screen and (max-width: 767px) {
     margin-bottom: 12px;
@@ -176,5 +174,7 @@
   }
 }
 .footer__box-subscribe {
-  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }

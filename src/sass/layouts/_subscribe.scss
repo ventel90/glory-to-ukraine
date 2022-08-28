@@ -20,15 +20,15 @@
 }
 
 .subscribe__paragraph {
-  font-size: 16px;
-  line-height: 150%;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
   margin-bottom: 24px;
   @media screen and (min-width: $desktop) {
     width: 656px;
   }
   @media screen and (max-width: 767px) {
-    font-size: 14px;
-    line-height: 1.16;
     margin-bottom: 40px;
   }
 }
