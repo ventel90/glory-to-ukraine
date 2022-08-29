@@ -101,7 +101,9 @@
 .footer__form-input {
   @extend %subscribe__common-input;
   margin-right: 13px;
-  margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    width: 280px;
+  }
 }
 .footer__form-button {
   @extend %subscribe__common-button;
